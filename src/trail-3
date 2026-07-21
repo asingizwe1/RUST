@@ -1,0 +1,12 @@
+fn main(){
+struct Race{
+name:&'static str,
+
+}
+impl Race{//Self- type of current struct
+fn help(name:&'static str)->Self
+{Self{name}}
+//creating instance of race using help method
+let race=Race::help("louis");
+println!("{}", race.name);
+}}
